@@ -1,0 +1,2667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wandera Transfers | Luxury Travel & Transfers in Coast Region, Kenya</title>
+    <meta name="description" content="Premium travel services in Diani, Coast Region. Airport transfers, SGR pickups, exclusive packages, BnB accommodation, and luxury tours.">
+    <meta name="keywords" content="wandera transfers, diani transfers, coast region travel, airport pickup kenya, sgr transfers, wasini package, mambrui package, luxury travel kenya">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <style>
+        /* ===== CSS VARIABLES ===== */
+        :root {
+            --primary-black: #000000;
+            --secondary-black: #0a0a0a;
+            --dark-black: #111111;
+            --gold-primary: #D4AF37;
+            --gold-light: #FFD700;
+            --gold-dark: #B8860B;
+            --gold-gradient: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #B8860B 100%);
+            --text-light: #ffffff;
+            --text-gray: #b0b0b0;
+            --text-dark: #333333;
+            --shadow-light: 0 5px 15px rgba(212, 175, 55, 0.2);
+            --shadow-heavy: 0 10px 30px rgba(212, 175, 55, 0.3);
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            --border-radius: 12px;
+            --section-padding: 100px 0;
+        }
+        
+        /* ===== RESET & BASE STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--primary-black);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(184, 134, 11, 0.04) 0%, transparent 50%);
+            z-index: -1;
+            pointer-events: none;
+        }
+        
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 4.5rem;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 2px 10px rgba(212, 175, 55, 0.2);
+        }
+        
+        h2 {
+            font-size: 3.5rem;
+            color: var(--text-light);
+            position: relative;
+            display: inline-block;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: var(--gold-gradient);
+            border-radius: 2px;
+        }
+        
+        h3 {
+            font-size: 2.2rem;
+            color: var(--gold-primary);
+        }
+        
+        h4 {
+            font-size: 1.8rem;
+            color: var(--text-light);
+        }
+        
+        h5 {
+            font-size: 1.4rem;
+            color: var(--gold-light);
+        }
+        
+        p {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-title h2 {
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .section-title p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 2rem auto 0;
+            color: var(--text-gray);
+        }
+        
+        /* ===== BUTTONS ===== */
+        .btn-gold {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 40px;
+            background: var(--gold-gradient);
+            color: var(--primary-black);
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .btn-gold::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #FFD700 100%);
+            opacity: 0;
+            z-index: -1;
+            transition: var(--transition);
+        }
+        
+        .btn-gold:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-heavy);
+            color: var(--primary-black);
+        }
+        
+        .btn-gold:hover::before {
+            opacity: 1;
+        }
+        
+        .btn-outline-gold {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 35px;
+            background: transparent;
+            color: var(--gold-primary);
+            border: 2px solid var(--gold-primary);
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .btn-outline-gold:hover {
+            background: var(--gold-primary);
+            color: var(--primary-black);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-light);
+        }
+        
+        /* ===== NAVIGATION ===== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            z-index: 1000;
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        .navbar.scrolled {
+            padding: 15px 0;
+            background: rgba(0, 0, 0, 0.98);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gold-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--primary-black);
+            font-weight: bold;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-text span:first-child {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-light);
+            letter-spacing: 1px;
+        }
+        
+        .logo-text span:last-child {
+            font-size: 0.9rem;
+            color: var(--gold-primary);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+        
+        .nav-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 8px 0;
+            position: relative;
+            transition: var(--transition);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold-gradient);
+            transition: var(--transition);
+        }
+        
+        .nav-link:hover {
+            color: var(--gold-primary);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .nav-link.active {
+            color: var(--gold-primary);
+        }
+        
+        .nav-link.active::after {
+            width: 100%;
+        }
+        
+        .nav-cta {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .whatsapp-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 25px;
+            background: #25D366;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+        }
+        
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--gold-primary);
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+        
+        /* ===== HERO SECTION ===== */
+        .hero-section {
+            min-height: 100vh;
+            padding-top: 120px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: 
+                linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+                url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            animation: heroPan 30s infinite alternate;
+        }
+        
+        @keyframes heroPan {
+            0% {
+                transform: scale(1);
+                background-position: center;
+            }
+            100% {
+                transform: scale(1.1);
+                background-position: top right;
+            }
+        }
+        
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-text {
+            max-width: 800px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.4rem;
+            color: var(--gold-light);
+            margin-bottom: 2rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .hero-description {
+            font-size: 1.3rem;
+            color: var(--text-gray);
+            margin-bottom: 3rem;
+            max-width: 600px;
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 50px;
+            margin-top: 4rem;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            color: var(--text-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* ===== VIDEO SECTION ===== */
+        .video-section {
+            padding: var(--section-padding);
+            background: var(--secondary-black);
+            position: relative;
+        }
+        
+        .video-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-heavy);
+            margin-top: 50px;
+        }
+        
+        .video-placeholder {
+            width: 100%;
+            height: 600px;
+            background: linear-gradient(135deg, #1a1a1a, #222222);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold-primary);
+        }
+        
+        .video-placeholder i {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+        
+        .video-placeholder p {
+            color: var(--text-gray);
+            font-size: 1.2rem;
+        }
+        
+        /* ===== SERVICES SECTION ===== */
+        .services-section {
+            padding: var(--section-padding);
+            background: var(--primary-black);
+            position: relative;
+        }
+        
+        .services-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .service-card {
+            background: linear-gradient(145deg, #1a1a1a, #222222);
+            border-radius: var(--border-radius);
+            padding: 40px 30px;
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gold-gradient);
+            transform: translateY(-100%);
+            transition: var(--transition);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-heavy);
+            border-color: var(--gold-primary);
+        }
+        
+        .service-card:hover::before {
+            transform: translateY(0);
+        }
+        
+        .service-image-container {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .service-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+            display: block;
+        }
+        
+        .service-card:hover .service-image {
+            transform: scale(1.1);
+        }
+        
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+        
+        .service-icon-inner {
+            width: 100%;
+            height: 100%;
+            background: var(--gold-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: var(--primary-black);
+            transition: var(--transition);
+        }
+        
+        .service-card:hover .service-icon-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .service-card h3 {
+            margin-bottom: 20px;
+            min-height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin-top: 20px;
+            text-align: left;
+        }
+        
+        .service-features li {
+            padding: 8px 0;
+            color: var(--text-gray);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .service-features li i {
+            color: var(--gold-primary);
+            font-size: 0.9rem;
+        }
+        
+        /* ===== VEHICLE SHOWCASE ===== */
+        .vehicle-showcase {
+            margin-top: 80px;
+            background: linear-gradient(145deg, #1a1a1a, #222222);
+            border-radius: var(--border-radius);
+            padding: 50px;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        .vehicle-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .vehicle-image {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .vehicle-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+            display: block;
+        }
+        
+        .vehicle-image:hover img {
+            transform: scale(1.1);
+        }
+        
+        /* ===== PACKAGES SECTION ===== */
+        .packages-section {
+            padding: var(--section-padding);
+            background: var(--secondary-black);
+            position: relative;
+        }
+        
+        .packages-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .package-card {
+            background: linear-gradient(145deg, #1a1a1a, #222222);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        .package-card:hover {
+            transform: translateY(-15px);
+            box-shadow: var(--shadow-heavy);
+            border-color: var(--gold-primary);
+        }
+        
+        .package-header {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .package-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+            display: block;
+        }
+        
+        .package-card:hover .package-image {
+            transform: scale(1.1);
+        }
+        
+        .package-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--gold-gradient);
+            color: var(--primary-black);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .package-content {
+            padding: 30px;
+        }
+        
+        .package-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--gold-primary);
+            margin: 20px 0;
+        }
+        
+        .package-price span {
+            font-size: 1rem;
+            color: var(--text-gray);
+            font-weight: 400;
+        }
+        
+        .package-features {
+            list-style: none;
+            margin: 25px 0;
+        }
+        
+        .package-features li {
+            padding: 12px 0;
+            color: var(--text-gray);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .package-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .package-features li i {
+            color: var(--gold-primary);
+            font-size: 1rem;
+        }
+        
+        /* ===== ACCOMMODATION SECTION ===== */
+        .accommodation-section {
+            padding: var(--section-padding);
+            background: var(--primary-black);
+            position: relative;
+        }
+        
+        .accommodation-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .accommodation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .accommodation-card {
+            background: linear-gradient(145deg, #1a1a1a, #222222);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        .accommodation-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-heavy);
+            border-color: var(--gold-primary);
+        }
+        
+        .accommodation-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: var(--transition);
+            display: block;
+        }
+        
+        .accommodation-card:hover .accommodation-image {
+            transform: scale(1.05);
+        }
+        
+        .accommodation-content {
+            padding: 30px;
+        }
+        
+        .accommodation-type {
+            display: inline-block;
+            padding: 6px 15px;
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--gold-primary);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .accommodation-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gold-primary);
+            margin: 15px 0;
+        }
+        
+        .accommodation-amenities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .amenity {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+        
+        .amenity i {
+            color: var(--gold-primary);
+            font-size: 0.8rem;
+        }
+        
+        /* ===== GALLERY SECTION ===== */
+        .gallery-section {
+            padding: var(--section-padding);
+            background: var(--secondary-black);
+            position: relative;
+        }
+        
+        .gallery-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            height: 300px;
+            cursor: pointer;
+        }
+        
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+            display: block;
+        }
+        
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+            opacity: 0;
+            transition: var(--transition);
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        
+        /* ===== REVIEWS SECTION ===== */
+        .reviews-section {
+            padding: var(--section-padding);
+            background: var(--primary-black);
+            position: relative;
+        }
+        
+        .reviews-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .review-form {
+            background: linear-gradient(145deg, #1a1a1a, #222222);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            margin-top: 50px;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        .review-form h3 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .rating-input {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-direction: row-reverse;
+        }
+        
+        .rating-input input {
+            display: none;
+        }
+        
+        .rating-input label {
+            font-size: 2.5rem;
+            color: #444;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .rating-input label:hover,
+        .rating-input label:hover ~ label,
+        .rating-input input:checked ~ label {
+            color: var(--gold-primary);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 8px;
+            color: var(--text-light);
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--gold-primary);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .review-card {
+            background: linear-gradient(145deg, #1a1a1a, #222222);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            transition: var(--transition);
+        }
+        
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-light);
+            border-color: var(--gold-primary);
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .reviewer-avatar {
+            width: 50px;
+            height: 50px;
+            background: var(--gold-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--primary-black);
+            font-size: 1.2rem;
+        }
+        
+        .reviewer-name {
+            font-weight: 600;
+            color: var(--text-light);
+        }
+        
+        .review-date {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+        
+        .review-stars {
+            color: var(--gold-primary);
+            font-size: 1.1rem;
+        }
+        
+        .review-text {
+            color: var(--text-gray);
+            line-height: 1.8;
+            font-style: italic;
+        }
+        
+        /* ===== CONTACT SECTION ===== */
+        .contact-section {
+            padding: var(--section-padding);
+            background: var(--secondary-black);
+            position: relative;
+        }
+        
+        .contact-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 50px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 25px;
+            background: linear-gradient(145deg, #1a1a1a, #222222);
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            transition: var(--transition);
+        }
+        
+        .contact-item:hover {
+            transform: translateX(10px);
+            border-color: var(--gold-primary);
+            box-shadow: var(--shadow-light);
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gold-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--primary-black);
+            flex-shrink: 0;
+        }
+        
+        .contact-details h4 {
+            margin-bottom: 10px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .social-link {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(145deg, #1a1a1a, #222222);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold-primary);
+            font-size: 1.3rem;
+            text-decoration: none;
+            transition: var(--transition);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .social-link:hover {
+            background: var(--gold-gradient);
+            color: var(--primary-black);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-light);
+        }
+        
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--dark-black);
+            padding: 80px 0 30px;
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-logo .logo-icon {
+            width: 40px;
+            height: 40px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-light);
+            letter-spacing: 1px;
+        }
+        
+        .footer-links h4,
+        .footer-newsletter h4 {
+            color: var(--gold-primary);
+            margin-bottom: 25px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+        
+        .footer-links a {
+            color: var(--text-gray);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-links a:hover {
+            color: var(--gold-primary);
+            transform: translateX(5px);
+        }
+        
+        .footer-links a i {
+            font-size: 0.8rem;
+            color: var(--gold-primary);
+        }
+        
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .newsletter-input {
+            flex: 1;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 50px;
+            color: var(--text-light);
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .newsletter-input:focus {
+            outline: none;
+            border-color: var(--gold-primary);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+        
+        /* ===== ANIMATIONS ===== */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1200px) {
+            h1 { font-size: 3.5rem; }
+            h2 { font-size: 2.8rem; }
+            .hero-stats { gap: 30px; }
+            .video-placeholder { height: 500px; }
+        }
+        
+        @media (max-width: 992px) {
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: rgba(10, 10, 10, 0.98);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                padding: 30px;
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+                z-index: 999;
+                border-top: 1px solid rgba(212, 175, 55, 0.1);
+            }
+            
+            .nav-menu.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .vehicle-images {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2.8rem; }
+            h2 { font-size: 2.2rem; }
+            h3 { font-size: 1.8rem; }
+            
+            .section-padding {
+                padding: 70px 0;
+            }
+            
+            .hero-section {
+                padding-top: 100px;
+            }
+            
+            .hero-content {
+                text-align: center;
+            }
+            
+            .hero-stats {
+                justify-content: center;
+            }
+            
+            .services-grid,
+            .packages-grid,
+            .accommodation-grid,
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+            
+            .nav-container {
+                padding: 0 20px;
+            }
+            
+            .hero-content,
+            .services-container,
+            .packages-container,
+            .accommodation-container,
+            .gallery-container,
+            .reviews-container,
+            .contact-container,
+            .footer-container {
+                padding: 0 20px;
+            }
+            
+            .video-placeholder { height: 400px; }
+        }
+        
+        @media (max-width: 480px) {
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            
+            .btn-gold,
+            .btn-outline-gold {
+                padding: 14px 25px;
+                font-size: 1rem;
+            }
+            
+            .service-card,
+            .package-card,
+            .accommodation-card,
+            .review-card,
+            .contact-item {
+                padding: 25px 20px;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+            
+            .video-placeholder { height: 300px; }
+        }
+        
+        /* ===== CUSTOM SCROLLBAR ===== */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--secondary-black);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--gold-gradient);
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gold-primary);
+        }
+        
+        /* ===== UTILITY CLASSES ===== */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .text-center { text-align: center; }
+        .text-gold { color: var(--gold-primary); }
+        .text-light { color: var(--text-light); }
+        .text-gray { color: var(--text-gray); }
+        
+        .mt-1 { margin-top: 1rem; }
+        .mt-2 { margin-top: 2rem; }
+        .mt-3 { margin-top: 3rem; }
+        .mt-4 { margin-top: 4rem; }
+        .mt-5 { margin-top: 5rem; }
+        
+        .mb-1 { margin-bottom: 1rem; }
+        .mb-2 { margin-bottom: 2rem; }
+        .mb-3 { margin-bottom: 3rem; }
+        .mb-4 { margin-bottom: 4rem; }
+        .mb-5 { margin-bottom: 5rem; }
+        
+        .hidden { display: none; }
+        .visible { display: block; }
+        
+        /* ===== BEACH ANIMATION BACKGROUND ===== */
+        .beach-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        
+        .palm-tree {
+            position: absolute;
+            bottom: 0;
+            font-size: 4rem;
+            color: #2d5016;
+            animation: sway 8s ease-in-out infinite;
+            transform-origin: bottom center;
+        }
+        
+        @keyframes sway {
+            0%, 100% { transform: rotate(-5deg); }
+            50% { transform: rotate(5deg); }
+        }
+        
+        .wave {
+            position: absolute;
+            bottom: 0;
+            width: 300%;
+            height: 100px;
+            background: linear-gradient(transparent, rgba(30, 144, 255, 0.3));
+            border-radius: 50%;
+            animation: waveMove 20s linear infinite;
+        }
+        
+        .wave:nth-child(2) {
+            animation-delay: -5s;
+            opacity: 0.5;
+            height: 80px;
+        }
+        
+        .wave:nth-child(3) {
+            animation-delay: -10s;
+            opacity: 0.3;
+            height: 60px;
+        }
+        
+        @keyframes waveMove {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        .coconut {
+            position: absolute;
+            width: 20px;
+            height: 25px;
+            background: #8B4513;
+            border-radius: 50%;
+            animation: coconutFall 15s linear infinite;
+        }
+        
+        @keyframes coconutFall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+        
+        /* ===== IMAGE PLACEHOLDER STYLES ===== */
+        .image-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #1a1a1a, #222222);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold-primary);
+            border: 2px dashed rgba(212, 175, 55, 0.3);
+            border-radius: 8px;
+        }
+        
+        .image-placeholder i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .image-placeholder p {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Beach Animation Background -->
+    <div class="beach-animation">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="palm-tree" style="left: 10%;">🌴</div>
+        <div class="palm-tree" style="right: 15%;">🌴</div>
+        <div class="palm-tree" style="left: 25%;">🌴</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">WT</div>
+                <div class="logo-text">
+                    <span>WANDERA</span>
+                    <span>Transfers & Tours</span>
+                </div>
+            </a>
+
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#video" class="nav-link">Video</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#packages" class="nav-link">Packages</a></li>
+                <li><a href="#accommodation" class="nav-link">Accommodation</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="https://wa.me/254716643005?text=Hello%20Wandera%20Transfers!%20I%20would%20like%20to%20book%20a%20service." 
+                   class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Book Now</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="animate__animated animate__fadeInDown">Premium Travel Services in Coast Region</h1>
+                <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">Luxury • Comfort • Reliability</p>
+                <p class="hero-description animate__animated animate__fadeInUp animate__delay-2s">
+                    Experience premium travel services with Wandera Transfers. From airport pickups to exclusive coastal tours, 
+                    we provide luxury transportation and accommodation solutions across the beautiful Coast Region of Kenya.
+                </p>
+                <div class="animate__animated animate__fadeInUp animate__delay-3s">
+                    <a href="https://wa.me/254716643005?text=Hello%20Wandera%20Transfers!%20I%20would%20like%20to%20book%20a%20service." 
+                       class="btn-gold" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Book Via WhatsApp
+                    </a>
+                    <a href="#contact" class="btn-outline-gold ml-3">
+                        <i class="fas fa-envelope"></i>
+                        Email Inquiry
+                    </a>
+                </div>
+                
+                <div class="hero-stats animate__animated animate__fadeInUp animate__delay-4s">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Service Available</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Destinations</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Introduction Section -->
+    <section id="video" class="video-section">
+        <div class="video-container">
+            <div class="section-title">
+                <h2>Our Story in Motion</h2>
+                <p>Watch our introduction video to experience Wandera Transfers</p>
+            </div>
+            
+            <div class="video-wrapper">
+                <div class="video-placeholder">
+                    <i class="fas fa-play-circle"></i>
+                    <h4>Wandera Transfers Introduction Video</h4>
+                    <p>Upload your video file to showcase your services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="services-container">
+            <div class="section-title">
+                <h2>Our Premium Services</h2>
+                <p>Experience luxury travel with our comprehensive range of professional services</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Airport Transfers -->
+                <div class="service-card">
+                    <div class="service-image-container">
+                        <img src="C:\Users\user\Downloads\OIP (2)111.webp"
+                             alt="Airport Transfer Service" 
+                             class="service-image">
+                    </div>
+                    
+                    <div class="service-icon">
+                        <div class="service-icon-inner">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </div>
+                    
+                    <h3>Airport Pickups & Drop-offs</h3>
+                    <p>Professional airport transfers from Moi International Airport, Ukunda Airstrip, and all major airports in the Coast region.</p>
+                    
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 24/7 Airport Service</li>
+                        <li><i class="fas fa-check"></i> Flight Monitoring</li>
+                        <li><i class="fas fa-check"></i> Meet & Greet Service</li>
+                        <li><i class="fas fa-check"></i> Luxury Nissan Serena</li>
+                    </ul>
+                    
+                    <a href="C:\Users\user\Downloads\msa-data.jpg"
+                       class="btn-outline-gold mt-3" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Book Airport Transfer
+                    </a>
+                </div>
+                
+                <!-- SGR Services -->
+                <div class="service-card">
+                    <div class="service-image-container">
+                        <img src="C:\Users\user\Downloads\c505d836-3009-4497-9a8c-40d39b8cc212-1024x576.jpg"
+                             alt="SGR Train Service" 
+                             class="service-image">
+                    </div>
+                    
+                    <div class="service-icon">
+                        <div class="service-icon-inner">
+                            <i class="fas fa-train"></i>
+                        </div>
+                    </div>
+                    
+                    <h3>SGR Pickups & Drop-offs</h3>
+                    <p>Reliable SGR station transfers across the Coast region with comfortable luxury vehicles and professional drivers.</p>
+                    
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> All SGR Stations</li>
+                        <li><i class="fas fa-check"></i> Timely Pickups</li>
+                        <li><i class="fas fa-check"></i> Luggage Assistance</li>
+                        <li><i class="fas fa-check"></i> Multiple Stops</li>
+                    </ul>
+                    
+                    <a href="C:\Users\user\Downloads\ibwppc4ura0ebet58d6bff07e9d71.webp"
+                       class="btn-outline-gold mt-3" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Book SGR Transfer
+                    </a>
+                </div>
+                
+                <!-- Long Distance Travel -->
+                <div class="service-card">
+                    <div class="service-image-container">
+                        <img src="C:\Users\user\Downloads\holiday deals.png"
+                             alt="Long Distance Travel" 
+                             class="service-image">
+                    </div>
+                    
+                    <div class="service-icon">
+                        <div class="service-icon-inner">
+                            <i class="fas fa-road"></i>
+                        </div>
+                    </div>
+                    
+                    <h3>Long Distance Travel</h3>
+                    <p>Comfortable long-distance travel services throughout Kenya with our luxury Nissan Serena and experienced drivers.</p>
+                    
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Nationwide Travel</li>
+                        <li><i class="fas fa-check"></i> Comfort Stops</li>
+                        <li><i class="fas fa-check"></i> Refreshments</li>
+                        <li><i class="fas fa-check"></i> Experienced Driver</li>
+                    </ul>
+                    
+                    <a href="C:\Users\user\Downloads\good morning (Poster).mp4"
+                       class="btn-outline-gold mt-3" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Book Long Distance
+                    </a>
+                </div>
+                
+                <!-- Beach Tours -->
+                <div class="service-card">
+                    <div class="service-image-container">
+                        <img src="C:\Users\user\Downloads\download (1).webp"
+                             alt="Diani Beach Tours" 
+                             class="service-image">
+                    </div>
+                    
+                    <div class="service-icon">
+                        <div class="service-icon-inner">
+                            <i class="fas fa-umbrella-beach"></i>
+                        </div>
+                    </div>
+                    
+                    <h3>Diani Beach Tours</h3>
+                    <p>Explore Diani's beautiful beaches with our comprehensive tour packages including boat rides and water activities.</p>
+                    
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Beach Hopping</li>
+                        <li><i class="fas fa-check"></i> Boat Rides Included</li>
+                        <li><i class="fas fa-check"></i> Snorkeling Gear</li>
+                        <li><i class="fas fa-check"></i> Photography</li>
+                    </ul>
+                    
+                    <a href="C:\Users\user\Downloads\WhatsApp Image 2025-12-06 at 10.30.18.jpeg"
+                       class="btn-outline-gold mt-3" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Book Beach Tour
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Vehicle Showcase -->
+            <div class="vehicle-showcase mt-5">
+                <div class="section-title">
+                    <h3>Our Luxury Vehicle Fleet</h3>
+                    <p>Travel in comfort and style with our premium Nissan Serena fleet</p>
+                </div>
+                
+                <div class="vehicle-images">
+                    <div class="vehicle-image">
+                        <img src="C:\Users\user\Downloads\WhatsApp Image 2025-12-03 at 23.09.38.jpeg"
+                             alt="Nissan Serena Luxury Van" 
+                             class="vehicle-img">
+                    </div>
+                </div>
+                
+                <div class="vehicle-features" style="margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <div style="display: flex; align-items: center; gap: 15px; padding: 20px; background: rgba(212, 175, 55, 0.1); border-radius: 8px;">
+                        <i class="fas fa-users" style="color: var(--gold-primary); font-size: 1.5rem;"></i>
+                        <div>
+                            <strong style="color: var(--text-light);">7 Passenger Capacity</strong>
+                            <p style="color: var(--text-gray); margin: 5px 0 0; font-size: 0.9rem;">Comfortable seating for groups and families</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 15px; padding: 20px; background: rgba(212, 175, 55, 0.1); border-radius: 8px;">
+                        <i class="fas fa-suitcase" style="color: var(--gold-primary); font-size: 1.5rem;"></i>
+                        <div>
+                            <strong style="color: var(--text-light);">Ample Luggage Space</strong>
+                            <p style="color: var(--text-gray); margin: 5px 0 0; font-size: 0.9rem;">Room for all your travel gear and souvenirs</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 15px; padding: 20px; background: rgba(212, 175, 55, 0.1); border-radius: 8px;">
+                        <i class="fas fa-snowflake" style="color: var(--gold-primary); font-size: 1.5rem;"></i>
+                        <div>
+                            <strong style="color: var(--text-light);">Air Conditioning</strong>
+                            <p style="color: var(--text-gray); margin: 5px 0 0; font-size: 0.9rem;">Stay cool in the tropical climate</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 15px; padding: 20px; background: rgba(212, 175, 55, 0.1); border-radius: 8px;">
+                        <i class="fas fa-wifi" style="color: var(--gold-primary); font-size: 1.5rem;"></i>
+                        <div>
+                            <strong style="color: var(--text-light);">Free WiFi & Entertainment</strong>
+                            <p style="color: var(--text-gray); margin: 5px 0 0; font-size: 0.9rem;">Stay connected and entertained on the go</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages-section">
+        <div class="packages-container">
+            <div class="section-title">
+                <h2>Exclusive Travel Packages</h2>
+                <p>All-inclusive packages for unforgettable experiences in the Coast Region</p>
+            </div>
+            
+            <div class="packages-grid">
+                <!-- Wasini Package -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <img src="C:\Users\user\Downloads\WhatsApp Image 2026-02-05 at 09.33.11.jpeg"
+                             alt="Wasini Island Package" 
+                             class="package-image">
+                        <div class="package-badge">Most Popular</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Wasini Island Package</h3>
+                        <p>Experience the breathtaking beauty of Wasini Island with this all-inclusive package.</p>
+                        
+                        <div class="package-price">KES 15,000 <span>per person</span></div>
+                        
+                        <ul class="package-features">
+                            <li><i class="fas fa-car"></i> Round trip transfers from Diani</li>
+                            <li><i class="fas fa-ship"></i> Boat ride to Wasini Island</li>
+                            <li><i class="fas fa-utensils"></i> Fresh seafood lunch included</li>
+                            <li><i class="fas fa-swimmer"></i> Snorkeling gear provided</li>
+                            <li><i class="fas fa-user-tie"></i> Professional guide services</li>
+                            <li><i class="fas fa-camera"></i> Photography sessions</li>
+                        </ul>
+                        
+                        <a href="C:\Users\user\Downloads\WhatsApp Image 2026-02-05 at 09.33.16.jpeg"
+                           class="btn-gold w-100 mt-3" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Book Wasini Package
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Mambrui Package -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <img src="C:\Users\user\Downloads\OIP (1).webp"
+                             alt="Mambrui Beach Package" 
+                             class="package-image">
+                        <div class="package-badge">Cultural Experience</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Mambrui Beach Package</h3>
+                        <p>Discover the hidden gem of Mambrui with our curated cultural and beach experience.</p>
+                        
+                        <div class="package-price">KES 12,000 <span>per person</span></div>
+                        
+                        <ul class="package-features">
+                            <li><i class="fas fa-car"></i> Transport to Mambrui Beach</li>
+                            <li><i class="fas fa-umbrella-beach"></i> Beach activities & games</li>
+                            <li><i class="fas fa-utensils"></i> Local Swahili cuisine lunch</li>
+                            <li><i class="fas fa-landmark"></i> Cultural village tour</li>
+                            <li><i class="fas fa-camera"></i> Professional photography</li>
+                            <li><i class="fas fa-gift"></i> Souvenir from local artisans</li>
+                        </ul>
+                        
+                        <a href="C:\Users\user\Downloads\Mambrui-sand-dunes-Mambrui-Malindi-Mambrui-beach-Mambrui-Sand-dunes-direction-Mambrui-sand-dunes-activities-1.jpg"
+                           class="btn-gold w-100 mt-3" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Book Mambrui Package
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Diani Experience -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <img src="C:\Users\user\Downloads\download.webp"
+                             alt="Diani Beach Experience" 
+                             class="package-image">
+                        <div class="package-badge">Beach Lovers</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Diani Beach Experience</h3>
+                        <p>Enjoy the best of Diani's white sandy beaches with our exclusive beach package.</p>
+                        
+                        <div class="package-price">KES 8,000 <span>per person</span></div>
+                        
+                        <ul class="package-features">
+                            <li><i class="fas fa-car"></i> Beach transfers in Diani</li>
+                            <li><i class="fas fa-ship"></i> Glass bottom boat ride</li>
+                            <li><i class="fas fa-cocktail"></i> Refreshments & cocktails</li>
+                            <li><i class="fas fa-swimmer"></i> Beach equipment provided</li>
+                            <li><i class="fas fa-camera"></i> Beach photography</li>
+                            <li><i class="fas fa-umbrella"></i> Beach chairs & umbrella</li>
+                        </ul>
+                        
+                        <a href="C:\Users\user\Downloads\WhatsApp Image 2025-12-03 at 23.30.31.jpeg"
+                           class="btn-gold w-100 mt-3" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Book Diani Experience
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation Section -->
+    <section id="accommodation" class="accommodation-section">
+        <div class="accommodation-container">
+            <div class="section-title">
+                <h2>Wandera Homes Accommodation</h2>
+                <p>Premium BnB accommodations for your comfortable stay in the Coast Region</p>
+            </div>
+            
+            <div class="accommodation-grid">
+                <!-- Beachfront Villa -->
+                <div class="accommodation-card">
+                    <img src="C:\Users\user\Downloads\WhatsApp Image 2026-02-03 at 16.24.34.jpeg"
+                         alt="Beachfront Paradise Villa" 
+                         class="accommodation-image">
+                    <div class="accommodation-content">
+                        <span class="accommodation-type">Luxury Villa</span>
+                        <h3>Beachfront Paradise Villa</h3>
+                        <p>Stunning beachfront villa with panoramic ocean views and private access to the beach.</p>
+                        
+                        <div class="accommodation-amenities">
+                            <span class="amenity"><i class="fas fa-bed"></i> 4 Bedrooms</span>
+                            <span class="amenity"><i class="fas fa-swimming-pool"></i> Private Pool</span>
+                            <span class="amenity"><i class="fas fa-wifi"></i> Free WiFi</span>
+                            <span class="amenity"><i class="fas fa-tv"></i> Smart TV</span>
+                            <span class="amenity"><i class="fas fa-utensils"></i> Full Kitchen</span>
+                            <span class="amenity"><i class="fas fa-car"></i> Parking</span>
+                        </div>
+                        
+                        <div class="accommodation-price">KES 25,000 / night</div>
+                        
+                        <a href="C:\Users\user\Downloads\WhatsApp Image 2026-02-03 at 16.24.33.jpeg"
+                           class="btn-gold w-100 mt-3" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Book This Villa
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Garden Cottage -->
+                <div class="accommodation-card">
+                    <img src="C:\Users\user\Downloads\WhatsApp Image 2026-01-30 at 15.33.31 (2).jpeg"
+                         alt="Tropical Garden Cottage" 
+                         class="accommodation-image">
+                    <div class="accommodation-content">
+                        <span class="accommodation-type">Cottage</span>
+                        <h3>Tropical Garden Cottage</h3>
+                        <p>Cozy cottage surrounded by lush tropical gardens, perfect for a peaceful retreat.</p>
+                        
+                        <div class="accommodation-amenities">
+                            <span class="amenity"><i class="fas fa-bed"></i> 2 Bedrooms</span>
+                            <span class="amenity"><i class="fas fa-tree"></i> Garden View</span>
+                            <span class="amenity"><i class="fas fa-wifi"></i> Free WiFi</span>
+                            <span class="amenity"><i class="fas fa-kitchen-set"></i> Self Catering</span>
+                            <span class="amenity"><i class="fas fa-shower"></i> Hot Water</span>
+                            <span class="amenity"><i class="fas fa-utensils"></i> BBQ Area</span>
+                        </div>
+                        
+                        <div class="accommodation-price">KES 12,000 / night</div>
+                        
+                        <a href="C:\Users\user\Downloads\WhatsApp Image 2026-01-30 at 15.33.32.jpeg"
+                           class="btn-gold w-100 mt-3" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Book This Cottage
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Executive Apartment -->
+                <div class="accommodation-card">
+                    <img src="C:\Users\user\Downloads\WWS-DSC00822.jpg"
+                         alt="Executive Seaview Apartment" 
+                         class="accommodation-image">
+                    <div class="accommodation-content">
+                        <span class="accommodation-type">Apartment</span>
+                        <h3>Executive Seaview Apartment</h3>
+                        <p>Modern apartment in prime location with stunning sea views and all amenities.</p>
+                        
+                        <div class="accommodation-amenities">
+                            <span class="amenity"><i class="fas fa-bed"></i> 3 Bedrooms</span>
+                            <span class="amenity"><i class="fas fa-water"></i> Sea View</span>
+                            <span class="amenity"><i class="fas fa-wifi"></i> High-Speed WiFi</span>
+                            <span class="amenity"><i class="fas fa-tv"></i> Netflix</span>
+                            <span class="amenity"><i class="fas fa-dumbbell"></i> Gym Access</span>
+                            <span class="amenity"><i class="fas fa-car"></i> Secure Parking</span>
+                        </div>
+                        
+                        <div class="accommodation-price">KES 18,000 / night</div>
+                        
+                        <a href="C:\Users\user\Downloads\home-pg-gallery-b1.jpg"
+                           class="btn-gold w-100 mt-3" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Book This Apartment
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="gallery-container">
+            <div class="section-title">
+                <h2>Our Gallery</h2>
+                <p>Experience the beauty of Coast Region through our lens</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="C:\Users\user\Downloads\WhatsApp Image 2026-02-05 at 09.35.29.jpeg"
+                         alt="Wasini Island Views" 
+                         class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Wasini Island Views</h4>
+                        <p>Crystal clear waters and marine life</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="C:\Users\user\Downloads\WhatsApp Image 2025-12-06 at 10.30.20.jpeg"
+                         alt="Diani White Sand Beaches" 
+                         class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Diani White Sand Beaches</h4>
+                        <p>Pristine beaches and palm trees</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="C:\Users\user\Downloads\WhatsApp Image 2025-12-03 at 23.09.38.jpeg" 
+                         alt="Our Luxury Nissan Serena" 
+                         class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Our Luxury Nissan Serena</h4>
+                        <p>Comfortable travel experience</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="C:\Users\user\Downloads\WhatsApp Image 2026-02-05 at 09.33.05.jpeg"
+                         alt="Local Swahili Cuisine" 
+                         class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Local Swahili Cuisine</h4>
+                        <p>Fresh seafood and traditional dishes</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="C:\Users\user\Downloads\WhatsApp Image 2025-12-06 at 10.30.18.jpeg"
+                         alt="Coastal Sunsets" 
+                         class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Coastal Sunsets</h4>
+                        <p>Breathtaking sunset views</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="C:\Users\user\Downloads\WhatsApp Image 2026-02-05 at 09.33.15.jpeg"
+                         alt="Water Activities" 
+                         class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Water Activities</h4>
+                        <p>Snorkeling and boat rides</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews-section">
+        <div class="reviews-container">
+            <div class="section-title">
+                <h2>Customer Reviews</h2>
+                <p>See what our clients say about their experience with Wandera Transfers</p>
+            </div>
+            
+            <!-- Review Form -->
+            <div class="review-form" id="reviewForm">
+                <h3>Share Your Experience</h3>
+                
+                <div class="rating-input">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">★</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">★</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">★</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">★</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">★</label>
+                </div>
+                
+                <form id="reviewSubmitForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" id="reviewName" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" id="reviewEmail" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Share your experience with Wandera Transfers..." id="reviewMessage" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-gold w-100">
+                        <i class="fas fa-star"></i> Submit Review
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Reviews Display -->
+            <div class="reviews-grid" id="reviewsContainer">
+                <!-- Reviews will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch for bookings, inquiries, or custom travel packages</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>0716 643 005</p>
+                            <p>0707 423 575</p>
+                            <small class="text-gray">24/7 Available</small>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>wanderatransfers@gmail.com</p>
+                            <small class="text-gray">Response within 24 hours</small>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Visit Us</h4>
+                            <p>Diani, Coast Region, Kenya</p>
+                            <small class="text-gray">Serving entire Coast Region</small>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/wandera_transfers.ke" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/1AXsmnVRuT/" class="social-link" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/254716643005" class="social-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:wanderatransfers@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <div class="service-card">
+                        <h3 class="text-center mb-4">Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name" id="contactName" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email" id="contactEmail" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="tel" class="form-control" placeholder="Phone Number" id="contactPhone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <select class="form-control" id="contactService" required>
+                                    <option value="">Select Service Type</option>
+                                    <option value="airport">Airport Transfer</option>
+                                    <option value="sgr">SGR Transfer</option>
+                                    <option value="long_distance">Long Distance Travel</option>
+                                    <option value="wasini">Wasini Island Package</option>
+                                    <option value="mambrui">Mambrui Beach Package</option>
+                                    <option value="diani">Diani Beach Experience</option>
+                                    <option value="accommodation">Wandera Homes Accommodation</option>
+                                    <option value="custom">Custom Package</option>
+                                    <option value="other">General Inquiry</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Your Message" rows="5" id="contactMessage" required></textarea>
+                            </div>
+                            
+                            <button type="button" class="btn-gold w-100" onclick="sendWhatsAppMessage()">
+                                <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">WT</div>
+                        <span class="footer-logo-text">WANDERA</span>
+                    </div>
+                    <p class="text-gray mt-2">
+                        Premium travel and transfer services in the Coast Region of Kenya. 
+                        Experience luxury, comfort, and reliability with Wandera Transfers.
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="https://www.instagram.com/wandera_transfers.ke" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/1AXsmnVRuT/" class="social-link" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/254716643005" class="social-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#video"><i class="fas fa-chevron-right"></i> Video</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#packages"><i class="fas fa-chevron-right"></i> Packages</a></li>
+                        <li><a href="#accommodation"><i class="fas fa-chevron-right"></i> Accommodation</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Airport Transfers</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> SGR Services</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Long Distance Travel</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Beach Tours</a></li>
+                        <li><a href="#packages"><i class="fas fa-chevron-right"></i> Travel Packages</a></li>
+                        <li><a href="#accommodation"><i class="fas fa-chevron-right"></i> BnB Accommodation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p class="text-gray">Subscribe for updates on new packages and special offers.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" class="newsletter-input" placeholder="Your Email" required>
+                        <button type="submit" class="btn-gold" style="padding: 12px 25px;">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Wandera Transfers. All rights reserved. | Designed with ❤️ for the Coast Region</p>
+                <p class="mt-1" style="font-size: 0.8rem; color: #666;">
+                    Phone: 0716 643 005 • Email: wanderatransfers@gmail.com • Location: Diani, Coast Region
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // ===== NAVIGATION =====
+        const navbar = document.querySelector('.navbar');
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileToggle.innerHTML = navMenu.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking a link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Active link highlighting
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // ===== REVIEWS SYSTEM =====
+        const reviewsContainer = document.getElementById('reviewsContainer');
+        const reviewForm = document.getElementById('reviewSubmitForm');
+
+        // Sample reviews data
+        const sampleReviews = [
+            {
+                id: 1,
+                name: "John Mwangi",
+                rating: 5,
+                date: "2024-01-15",
+                review: "Excellent service! Wandera Transfers made our trip to Wasini Island unforgettable. Professional driver, clean vehicle, and great communication. Highly recommended!",
+                initials: "JM"
+            },
+            {
+                id: 2,
+                name: "Sarah Johnson",
+                rating: 5,
+                date: "2024-02-20",
+                review: "The Mambrui package was amazing! Beautiful beaches, delicious food, and the guide was very knowledgeable. Will definitely use their services again.",
+                initials: "SJ"
+            },
+            {
+                id: 3,
+                name: "David Omondi",
+                rating: 4,
+                date: "2024-03-10",
+                review: "Airport pickup was on time, vehicle was clean and comfortable. Professional service. The driver was very helpful with our luggage.",
+                initials: "DO"
+            },
+            {
+                id: 4,
+                name: "Fatima Ali",
+                rating: 5,
+                date: "2024-03-25",
+                review: "Stayed at their beachfront villa - absolutely stunning! The Wandera Homes accommodation exceeded our expectations. Perfect for family vacation.",
+                initials: "FA"
+            },
+            {
+                id: 5,
+                name: "Robert Kimani",
+                rating: 5,
+                date: "2024-04-05",
+                review: "Booked the Diani Experience package. Everything was perfect - transfers, boat ride, and beach activities. Great value for money!",
+                initials: "RK"
+            },
+            {
+                id: 6,
+                name: "Grace Wambui",
+                rating: 5,
+                date: "2024-04-12",
+                review: "SGR pickup service was excellent. Driver arrived early, helped with luggage, and was very professional throughout the journey.",
+                initials: "GW"
+            }
+        ];
+
+        // Function to render stars
+        function renderStars(rating) {
+            let stars = '';
+            for (let i = 1; i <= 5; i++) {
+                if (i <= rating) {
+                    stars += '<i class="fas fa-star"></i>';
+                } else {
+                    stars += '<i class="far fa-star"></i>';
+                }
+            }
+            return stars;
+        }
+
+        // Function to render reviews
+        function renderReviews() {
+            reviewsContainer.innerHTML = '';
+            sampleReviews.forEach(review => {
+                const reviewCard = document.createElement('div');
+                reviewCard.className = 'review-card';
+                reviewCard.innerHTML = `
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">${review.initials}</div>
+                            <div>
+                                <div class="reviewer-name">${review.name}</div>
+                                <div class="review-date">${new Date(review.date).toLocaleDateString('en-US', { 
+                                    year: 'numeric', 
+                                    month: 'long', 
+                                    day: 'numeric' 
+                                })}</div>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            ${renderStars(review.rating)}
+                        </div>
+                    </div>
+                    <div class="review-text">"${review.review}"</div>
+                `;
+                reviewsContainer.appendChild(reviewCard);
+            });
+        }
+
+        // Handle review form submission
+        reviewForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('reviewName').value;
+            const email = document.getElementById('reviewEmail').value;
+            const message = document.getElementById('reviewMessage').value;
+            const rating = document.querySelector('input[name="rating"]:checked');
+            
+            if (!rating) {
+                alert('Please select a rating');
+                return;
+            }
+            
+            // Create new review
+            const newReview = {
+                id: sampleReviews.length + 1,
+                name: name,
+                rating: parseInt(rating.value),
+                date: new Date().toISOString().split('T')[0],
+                review: message,
+                initials: name.split(' ').map(n => n[0]).join('').toUpperCase()
+            };
+            
+            // Add to sample reviews
+            sampleReviews.unshift(newReview);
+            
+            // Re-render reviews
+            renderReviews();
+            
+            // Reset form
+            reviewForm.reset();
+            document.querySelectorAll('input[name="rating"]').forEach(radio => radio.checked = false);
+            
+            // Show success message
+            alert('Thank you for your review! It has been submitted successfully.');
+        });
+
+        // ===== CONTACT FORM WHATSAPP FUNCTION =====
+        function sendWhatsAppMessage() {
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const phone = document.getElementById('contactPhone').value;
+            const service = document.getElementById('contactService').value;
+            const message = document.getElementById('contactMessage').value;
+            
+            // Validate required fields
+            if (!name || !phone || !service || !message) {
+                alert('Please fill in all required fields: Name, Phone, Service Type, and Message');
+                return;
+            }
+            
+            // Create WhatsApp message
+            const whatsappMessage = 
+                `*New Inquiry from Wandera Transfers Website*%0A%0A` +
+                `*Name:* ${name}%0A` +
+                `*Email:* ${email || 'Not provided'}%0A` +
+                `*Phone:* ${phone}%0A` +
+                `*Service Type:* ${service}%0A` +
+                `*Message:* ${message}%0A%0A` +
+                `*Timestamp:* ${new Date().toLocaleString()}`;
+            
+            // Open WhatsApp
+            window.open(`https://wa.me/254716643005?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+            
+            // Clear form after sending
+            document.getElementById('contactForm').reset();
+        }
+
+        // ===== NEWSLETTER FORM =====
+        const newsletterForm = document.getElementById('newsletterForm');
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = newsletterForm.querySelector('input[type="email"]').value;
+            
+            // Simple validation
+            if (!email.includes('@') || !email.includes('.')) {
+                alert('Please enter a valid email address');
+                return;
+            }
+            
+            // In a real implementation, this would send to a backend
+            alert('Thank you for subscribing to our newsletter!');
+            newsletterForm.reset();
+        });
+
+        // ===== ANIMATIONS =====
+        // Add animation classes on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.service-card, .package-card, .accommodation-card, .review-card, .contact-item, .gallery-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ===== BEACH ANIMATION =====
+        function createCoconut() {
+            const coconut = document.createElement('div');
+            coconut.className = 'coconut';
+            coconut.style.left = Math.random() * 100 + 'vw';
+            coconut.style.animationDelay = Math.random() * 5 + 's';
+            document.querySelector('.beach-animation').appendChild(coconut);
+            
+            // Remove after animation completes
+            setTimeout(() => {
+                coconut.remove();
+            }, 15000);
+        }
+
+        // Create initial coconuts
+        for (let i = 0; i < 5; i++) {
+            createCoconut();
+        }
+
+        // Create new coconut periodically
+        setInterval(createCoconut, 3000);
+
+        // ===== INITIALIZE =====
+        document.addEventListener('DOMContentLoaded', () => {
+            // Render initial reviews
+            renderReviews();
+            
+            // Add smooth scrolling to all links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Initialize animations
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+            
+            console.log('Wandera Transfers website loaded successfully!');
+        });
+    </script>
+</body>
+</html>
